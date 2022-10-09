@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/yts_movie/static/css/main.97cbdfbc.css",
-    "main.js": "/yts_movie/static/js/main.05fc8ad9.js",
+    "main.js": "/yts_movie/static/js/main.ce1a9528.js",
     "index.html": "/yts_movie/index.html",
     "main.97cbdfbc.css.map": "/yts_movie/static/css/main.97cbdfbc.css.map",
-    "main.05fc8ad9.js.map": "/yts_movie/static/js/main.05fc8ad9.js.map"
+    "main.ce1a9528.js.map": "/yts_movie/static/js/main.ce1a9528.js.map"
   },
   "entrypoints": [
     "static/css/main.97cbdfbc.css",
-    "static/js/main.05fc8ad9.js"
+    "static/js/main.ce1a9528.js"
   ]
 }
