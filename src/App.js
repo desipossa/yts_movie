@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import Detail from './Detail';
 
 const App = () => {
@@ -15,6 +15,7 @@ const App = () => {
     }, [page]);
 
 
+    const natigate = useNavigate();
 
     const getMovieData = async () => {
         const res = await axios.get(`https://yts.mx/api/v2/list_movies.json?limit=50&page=${page}`);
@@ -40,7 +41,13 @@ const App = () => {
                                 () => paging > 1 ? setPaging(paging - listLength) : setPaging(1)
                             }>PREV</button>
                             {
-                                listButton.slice(paging, paging + listLength).map((it, idx) => <button key={idx} onClick={() => setPage(paging + idx)}>{paging + idx}</button>)
+                                listButton.slice(paging, paging + listLength).map((it, idx) => <button key={idx} onClick={
+                                    () => {
+                                        setPage(paging + idx);
+                                        natigate('/')
+                                    }
+
+                                }>{paging + idx}</button>)
                             }
                             <button onClick={
                                 () => paging < listButton.length - listLength ? setPaging(paging + listLength) : setPaging(paging)
