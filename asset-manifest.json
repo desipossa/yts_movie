@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yts_movie/static/css/main.97cbdfbc.css",
+    "main.js": "/yts_movie/static/js/main.ca1e13eb.js",
+    "index.html": "/yts_movie/index.html",
+    "main.97cbdfbc.css.map": "/yts_movie/static/css/main.97cbdfbc.css.map",
+    "main.ca1e13eb.js.map": "/yts_movie/static/js/main.ca1e13eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97cbdfbc.css",
+    "static/js/main.ca1e13eb.js"
+  ]
+}
